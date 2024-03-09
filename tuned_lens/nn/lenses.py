@@ -6,8 +6,8 @@ import json
 import abc
 
 from ._model_specific import instantiate_layer, maybe_wrap
-from ..model_surgery import get_final_layer_norm, get_transformer_layers
-from ..load_artifacts import load_lens_artifacts
+from tuned_lens.model_surgery import get_final_layer_norm, get_transformer_layers
+from tuned_lens.load_artifacts import load_lens_artifacts
 from transformers import PreTrainedModel
 from typing import Optional, Generator, Union
 import torch as th

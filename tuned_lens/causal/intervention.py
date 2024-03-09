@@ -1,7 +1,8 @@
-from ..model_surgery import get_transformer_layers
-from ..nn import Decoder, TunedLens
-from ..stats import aitchison_similarity, kl_divergence, sample_neighbors
-from ..utils import pytree_map, revcumsum
+from tuned_lens.model_surgery import get_transformer_layers
+from tuned_lens.nn.lenses import TunedLens
+from tuned_lens.nn.decoder import Decoder
+from tuned_lens.stats import aitchison_similarity, kl_divergence, sample_neighbors
+from tuned_lens.utils import pytree_map, revcumsum
 from .utils import derange
 from contextlib import contextmanager
 from dataclasses import asdict, dataclass
